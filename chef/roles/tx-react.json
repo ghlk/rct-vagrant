@@ -1,0 +1,17 @@
+{
+  "name": "tx-react",
+  "description": "Torx React Server",
+  "override_attributes": {
+    "nodejs": {
+      "srv_path": "/srv/rct",
+      "global_modules": [
+        "grunt-cli",
+        "apidoc"
+      ]
+    }
+  },
+  "run_list": [
+    "role[base-vm]",
+    "role[server-node]"
+  ]
+}

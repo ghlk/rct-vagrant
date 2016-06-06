@@ -1,0 +1,14 @@
+source 'https://supermarket.chef.io'
+
+cookbook 'apt'
+cookbook 'git'
+cookbook 'build-essential'
+cookbook 'openssl'
+cookbook 'nodejs', '~> 2.4.2'
+cookbook 'curl'
+cookbook 'vim'
+cookbook 'ntp'
+cookbook 'timezone', git: 'https://github.com/winhamwr/chef-timezone.git'
+
+
+cookbook 'tx-nodejs', path: './torx-cookbooks/tx-nodejs'

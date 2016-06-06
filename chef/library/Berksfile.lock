@@ -1,0 +1,62 @@
+DEPENDENCIES
+  apt
+  build-essential
+  curl
+  git
+  nodejs (~> 2.4.2)
+  ntp
+  openssl
+  timezone
+    git: https://github.com/winhamwr/chef-timezone.git
+    revision: 2e8e32dfcc8c70964d7d77de0eb503510c2f6c24
+  tx-nodejs
+    path: torx-cookbooks/tx-nodejs
+  vim
+
+GRAPH
+  apt (4.0.0)
+    compat_resource (>= 0.0.0)
+  ark (1.1.0)
+    build-essential (>= 0.0.0)
+    seven_zip (>= 0.0.0)
+    windows (>= 0.0.0)
+  build-essential (6.0.0)
+    compat_resource (>= 12.10)
+    mingw (>= 1.1)
+    seven_zip (>= 0.0.0)
+  chef-sugar (3.3.0)
+  chef_handler (1.4.0)
+  compat_resource (12.10.5)
+  curl (2.0.1)
+  dmg (2.4.0)
+  git (4.5.0)
+    build-essential (>= 0.0.0)
+    dmg (>= 0.0.0)
+    windows (>= 0.0.0)
+    yum-epel (>= 0.0.0)
+  homebrew (2.1.0)
+    build-essential (>= 2.1.2)
+  mingw (1.1.0)
+    compat_resource (>= 0.0.0)
+    seven_zip (>= 0.0.0)
+  nodejs (2.4.4)
+    apt (>= 0.0.0)
+    ark (>= 0.0.0)
+    build-essential (>= 0.0.0)
+    homebrew (>= 0.0.0)
+    yum-epel (>= 0.0.0)
+  ntp (2.0.0)
+    windows (>= 1.38.0)
+  openssl (4.4.0)
+    chef-sugar (>= 3.1.1)
+  seven_zip (2.0.1)
+    windows (>= 1.2.2)
+  timezone (0.0.1)
+  tx-nodejs (0.1.0)
+    nodejs (>= 0.0.0)
+  vim (2.0.1)
+  windows (1.43.0)
+    chef_handler (>= 0.0.0)
+  yum (3.11.0)
+  yum-epel (0.7.0)
+    yum (>= 3.6.3)

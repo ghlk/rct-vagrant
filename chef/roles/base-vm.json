@@ -1,0 +1,20 @@
+{
+  "name": "base-vm",
+  "description": "Basic VM build",
+  "override_attributes": {
+    "apt": {
+      "compile_time_update": true
+    },
+    "build-essential": {
+      "compile_time": true
+    }
+  },
+  "run_list": [
+    "recipe[apt]",
+    "recipe[build-essential]",
+    "recipe[vim]",
+    "recipe[curl]",
+    "recipe[git]",
+    "recipe[openssl]"
+  ]
+}
