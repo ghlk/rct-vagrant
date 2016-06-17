@@ -1,6 +1,0 @@
-/var/cache/apt/archives
-/var/chef/cache
-/opt/vagrant_ruby/lib/ruby/gems/1.8/cache
-/opt/chef/embedded/lib/ruby/gems/2.1.0/cache
-/var/lib/apt/lists
-/home/vagrant/.npm
