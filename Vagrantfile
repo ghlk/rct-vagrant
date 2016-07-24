@@ -32,7 +32,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   config.vm.define "rct" do |rct|
     rct.vm.box = DEFAULT_BOX
     rct.vm.hostname = "rct.#{DEFAULT_DOMAIN}"
-    rct.vm.synced_folder "../torx-react", "/srv/rct/"
+    rct.vm.synced_folder "../rct-react", "/srv/rct/"
     rct.vm.network "private_network", ip: RCT_SERVER_IP
     rct.vm.provider :virtualbox do |vb|
       vb.customize ["modifyvm", :id, "--memory", "2048"]
